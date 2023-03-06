@@ -67,6 +67,18 @@
     <Compile Include="forms\detallesRiesgo.Designer.cs">
       <DependentUpon>detallesRiesgo.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\identificacionRiesgo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\identificacionRiesgo.Designer.cs">
+      <DependentUpon>identificacionRiesgo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\planRespuesta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +89,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\detallesRiesgo.resx">
       <DependentUpon>detallesRiesgo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\identificacionRiesgo.resx">
+      <DependentUpon>identificacionRiesgo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\planRespuesta.resx">
       <DependentUpon>planRespuesta.cs</DependentUpon>
@@ -89,6 +107,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -114,6 +133,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginSoluciones.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
