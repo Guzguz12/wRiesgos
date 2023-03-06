@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace wRiesgos
+namespace wRiesgos.forms
 {
-    public partial class Form1 : Form
+    public partial class planRespuesta : Form
     {
-        public Form1()
+        public planRespuesta()
         {
             InitializeComponent();
         }
