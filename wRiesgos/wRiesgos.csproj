@@ -79,6 +79,12 @@
     <Compile Include="forms\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="forms\planRespuesta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\planRespuesta.resx">
       <DependentUpon>planRespuesta.cs</DependentUpon>
@@ -136,6 +145,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\loginSoluciones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Iconos\Analis.png" />
+    <Content Include="Iconos\Identificar.png" />
+    <Content Include="Iconos\Plan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\wManejoDatos\wManejoDatos.csproj">
+      <Project>{f5a47908-a898-4c4c-8587-bef3d034aaf7}</Project>
+      <Name>wManejoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\wManejoLogica\wManejoLogica.csproj">
+      <Project>{d1a9721f-e5ee-4778-a651-550074f142eb}</Project>
+      <Name>wManejoLogica</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

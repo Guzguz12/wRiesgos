@@ -17,13 +17,7 @@ namespace wRiesgos.forms
             InitializeComponent();
         }
 
-        public static void Main()
-        {
-            //estilos
-            Application.EnableVisualStyles();
-            //correr el formulario
-            Application.Run(new detallesRiesgo());
-        }
+      
         private void detallesRiesgo_Load(object sender, EventArgs e)
         {
 

@@ -16,5 +16,10 @@ namespace wRiesgos.forms
         {
             InitializeComponent();
         }
+
+        private void planRespuesta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

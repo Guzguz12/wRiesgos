@@ -86,6 +86,7 @@ namespace wRiesgos.forms
             this.Controls.Add(this.lblTituloPlan);
             this.Name = "planRespuesta";
             this.Text = "planRespuesta";
+            this.Load += new System.EventHandler(this.planRespuesta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

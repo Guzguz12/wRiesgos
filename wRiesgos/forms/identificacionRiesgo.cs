@@ -21,5 +21,10 @@ namespace wRiesgos.forms
         {
 
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
