@@ -110,5 +110,37 @@ namespace wManejoDatos
             return result;
         }
 
+        public static DataTable Priorizacion() 
+        {
+            DataTable dataTable = new DataTable();
+            using (SqlConnection cn = new SqlConnection(Conexion.cn))
+            {
+                //Crear una instancia de la clase SqlCommand
+                using (SqlCommand cmd = new SqlCommand("sp_Priorizacion", cn))
+                {
+                    try
+                    {
+                        //Indicar que el tipo de comando a ejecutar es un procediento almacenado
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        //adapter para llenar la datatble con el resultado del storeprocedure
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        //abrir conexion
+                        cn.Open();
+                        //rellenar el objeto datable con el resultado del sp
+                        da.Fill(dataTable);
+                    }
+                    catch (Exception e) 
+                    {
+                        dataTable = null;
+                    }
+                   
+                }
+               
+            }
+
+
+            return dataTable;
+        }
+
     }
 }

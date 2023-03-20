@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using wManejoDatos;
 namespace wRiesgos.forms
 {
     public partial class detallesRiesgo : Form
@@ -20,7 +20,8 @@ namespace wRiesgos.forms
       
         private void detallesRiesgo_Load(object sender, EventArgs e)
         {
-
+            dgvAnalisis.DataSource = DatosUsuario.Priorizacion();
+        
         }
     }
 }

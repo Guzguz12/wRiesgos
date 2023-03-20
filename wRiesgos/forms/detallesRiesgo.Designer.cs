@@ -29,45 +29,21 @@ namespace wRiesgos.forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idRiesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nivelRiesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estadoRiesgo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvAnalisis = new System.Windows.Forms.DataGridView();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.planRespuesta = new System.Windows.Forms.DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAnalisis)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvAnalisis
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idRiesgo,
-            this.nivelRiesgo,
-            this.estadoRiesgo,
-            this.planRespuesta});
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.ButtonShadow;
-            this.dataGridView1.Location = new System.Drawing.Point(187, 148);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 9);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(444, 150);
-            this.dataGridView1.TabIndex = 4;
-            // 
-            // idRiesgo
-            // 
-            this.idRiesgo.HeaderText = "Identificador del Riesgo";
-            this.idRiesgo.Name = "idRiesgo";
-            // 
-            // nivelRiesgo
-            // 
-            this.nivelRiesgo.HeaderText = "Nivel de Riesgo";
-            this.nivelRiesgo.Name = "nivelRiesgo";
-            // 
-            // estadoRiesgo
-            // 
-            this.estadoRiesgo.HeaderText = "Estado del Riesgo";
-            this.estadoRiesgo.Name = "estadoRiesgo";
+            this.dgvAnalisis.BackgroundColor = System.Drawing.Color.White;
+            this.dgvAnalisis.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAnalisis.GridColor = System.Drawing.SystemColors.ButtonShadow;
+            this.dgvAnalisis.Location = new System.Drawing.Point(187, 148);
+            this.dgvAnalisis.Margin = new System.Windows.Forms.Padding(3, 3, 3, 9);
+            this.dgvAnalisis.Name = "dgvAnalisis";
+            this.dgvAnalisis.Size = new System.Drawing.Size(444, 150);
+            this.dgvAnalisis.TabIndex = 4;
             // 
             // lblTitulo
             // 
@@ -81,11 +57,6 @@ namespace wRiesgos.forms
             this.lblTitulo.TabIndex = 5;
             this.lblTitulo.Text = "Análisis de los Riesgos";
             // 
-            // planRespuesta
-            // 
-            this.planRespuesta.HeaderText = "Plan de Respuesta";
-            this.planRespuesta.Name = "planRespuesta";
-            // 
             // detallesRiesgo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -93,11 +64,11 @@ namespace wRiesgos.forms
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvAnalisis);
             this.Name = "detallesRiesgo";
             this.Text = "detallesRiesgo";
             this.Load += new System.EventHandler(this.detallesRiesgo_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAnalisis)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,11 +76,7 @@ namespace wRiesgos.forms
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idRiesgo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nivelRiesgo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn estadoRiesgo;
-        private System.Windows.Forms.DataGridViewButtonColumn planRespuesta;
+        private System.Windows.Forms.DataGridView dgvAnalisis;
         private System.Windows.Forms.Label lblTitulo;
     }
 }
