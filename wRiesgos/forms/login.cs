@@ -39,5 +39,10 @@ namespace wRiesgos.forms
                 MessageBox.Show("Credenciales incorrectas");
             }
         }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+            txtUsuario.Focus();
+        }
     }
 }

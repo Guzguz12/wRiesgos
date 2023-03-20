@@ -55,7 +55,7 @@ namespace wRiesgos.forms
             this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
             this.lblUsuario.Font = new System.Drawing.Font("Sitka Small", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.Color.White;
-            this.lblUsuario.Location = new System.Drawing.Point(343, 124);
+            this.lblUsuario.Location = new System.Drawing.Point(351, 124);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(98, 31);
             this.lblUsuario.TabIndex = 1;
@@ -67,7 +67,7 @@ namespace wRiesgos.forms
             this.lblPassoword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassoword.Font = new System.Drawing.Font("Sitka Small", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassoword.ForeColor = System.Drawing.Color.White;
-            this.lblPassoword.Location = new System.Drawing.Point(324, 234);
+            this.lblPassoword.Location = new System.Drawing.Point(333, 234);
             this.lblPassoword.Name = "lblPassoword";
             this.lblPassoword.Size = new System.Drawing.Size(135, 31);
             this.lblPassoword.TabIndex = 2;
@@ -75,10 +75,10 @@ namespace wRiesgos.forms
             // 
             // btnIngresar
             // 
-            this.btnIngresar.BackColor = System.Drawing.Color.Silver;
-            this.btnIngresar.Font = new System.Drawing.Font("Sitka Small", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.ForeColor = System.Drawing.Color.DarkRed;
-            this.btnIngresar.Location = new System.Drawing.Point(307, 331);
+            this.btnIngresar.BackColor = System.Drawing.Color.White;
+            this.btnIngresar.Font = new System.Drawing.Font("Sitka Small", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.ForeColor = System.Drawing.Color.DarkGreen;
+            this.btnIngresar.Location = new System.Drawing.Point(314, 331);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(173, 56);
             this.btnIngresar.TabIndex = 3;
@@ -88,9 +88,9 @@ namespace wRiesgos.forms
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(295, 176);
+            this.txtUsuario.Location = new System.Drawing.Point(247, 176);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(199, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(306, 20);
             this.txtUsuario.TabIndex = 4;
             // 
             // txtPassword
@@ -115,6 +115,7 @@ namespace wRiesgos.forms
             this.Controls.Add(this.lblTituloLogin);
             this.Name = "login";
             this.Text = "login";
+            this.Load += new System.EventHandler(this.login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

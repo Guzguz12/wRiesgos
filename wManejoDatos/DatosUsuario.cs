@@ -77,5 +77,38 @@ namespace wManejoDatos
 
             return Permisos;
         }
+
+
+        public static int guardarRiesgo(string _descrip, string _causa, string _consecuencia, string _estado,int _probabilidad, int _impacto)
+        {
+            int result = 0;
+            //uso del sp
+            using (SqlConnection cn = new SqlConnection(Conexion.cn))
+            {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand("sp_GuardarRiesgo", cn);
+                    cmd.Parameters.AddWithValue("Descripcion", _descrip);
+                    cmd.Parameters.AddWithValue("Causa", _causa);
+                    cmd.Parameters.AddWithValue("Consecuencias", _consecuencia);
+                    cmd.Parameters.AddWithValue("Estado", _estado);
+                    cmd.Parameters.AddWithValue("Probabilidad ", _probabilidad);
+                    cmd.Parameters.AddWithValue("Impacto", _impacto);
+                    cmd.Parameters.Add("Resultado", SqlDbType.Int).Direction = ParameterDirection.Output;
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cn.Open();
+                    cmd.ExecuteNonQuery();
+                    result = Convert.ToInt32(cmd.Parameters["Resultado"].Value);
+                }
+                catch (Exception e)
+                {
+                    result = 0;
+                }
+            }
+
+
+            return result;
+        }
+
     }
 }

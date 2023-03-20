@@ -148,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Iconos\Analis.png" />
+    <Content Include="Iconos\exit.jpg" />
     <Content Include="Iconos\Identificar.png" />
     <Content Include="Iconos\Plan.png" />
   </ItemGroup>
